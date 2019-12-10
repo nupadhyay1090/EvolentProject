@@ -1,0 +1,52 @@
+
+@host = https://localhost:44357
+#############
+//Adds a new contact to the DB
+POST  {{host}}/api/Contact/Add
+Content-Type: application/json
+
+{
+  "FirstName": "Nishant",
+  "LastName": "Upadhyay",
+  "EmailID": "nishantIndia.com",
+  "PhoneNumber": "9986298033",
+  "ContactStatus": "Active"
+}
+
+#######
+//Gets all the contacts present in DB
+Get {{host}}/api/Contact/GET 
+Content-Type: application/json
+
+######
+// Updates a contact
+Put {{host}}/api/Contact/Update 
+Content-Type: application/json
+
+{
+  "ID":1,
+  "FirstName": "Nidhi",
+  "LastName": "Pandey",
+  "EmailID": "nishant@India.com",
+  "PhoneNumber": "+1-2345",
+  "ContactStatus": "Active"
+}
+
+#################
+//Deletes a contact
+DELETE {{host}}/api/Contact/Delete/6
+Content-Type: application/json
+
+###################
+//Deactivates a contact. 
+Get {{host}}/api/Contact/Deactivate/2
+Content-Type: applicatoin/json
+
+#######################
+//Reactivates a contact
+Get {{host}}/api/Contact/Reactivate/2
+Content-Type: application/json
+
+
+
+
