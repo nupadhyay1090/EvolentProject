@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Api.Contracts.Interfaces;
 using Api.Contracts.Models;
-
+using Api.ContactService.Validator;
 namespace Api.ContactService
 {
     public class ContactService : IContactService
@@ -23,11 +23,13 @@ namespace Api.ContactService
 
         public void AddNewContact(Contact contact)
         {
+            RequestValidator.ValidateRequest(contact);
             _dataLayer.AddNewContact(contact);
         }
 
         public void UpdateContact(Contact contact)
         {
+            RequestValidator.ValidateRequest(contact);
             _dataLayer.UpdateContact(contact);
         }
         public void DeactivateContact(int id)

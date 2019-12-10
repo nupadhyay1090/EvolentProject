@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsInventory", "ContactsInventory\ContactsInventory.csproj", "{8ED67876-5C18-4B80-8723-8C3B3D964370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactsInventory", "ContactsInventory\ContactsInventory.csproj", "{8ED67876-5C18-4B80-8723-8C3B3D964370}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{0ECAF60E-9015-480C-8C22-F3D36BBBC501}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0B4FF58E-CAD4-423A-BD07-8E69FA528728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Contracts", "Contact.Api.Contracts\Api.Contracts.csproj", "{62E56E22-17D7-4C2C-BA38-F672633D008E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Contracts", "Contact.Api.Contracts\Api.Contracts.csproj", "{62E56E22-17D7-4C2C-BA38-F672633D008E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.DAL", "Contact.Api.DAL\Api.DAL.csproj", "{2B521AFD-D555-4DE5-B40A-A20F94FB5B38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.DAL", "Contact.Api.DAL\Api.DAL.csproj", "{2B521AFD-D555-4DE5-B40A-A20F94FB5B38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{20B341AF-8980-4D5F-B3BE-095679BC3F90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.ContactService", "Contact.Api.ContactService.cs\Api.ContactService.csproj", "{933EC3C2-A763-4592-8B62-DB3678A3CAED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.ContactService", "Contact.Api.ContactService.cs\Api.ContactService.csproj", "{933EC3C2-A763-4592-8B62-DB3678A3CAED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{8FEA0026-1F3E-42BE-AD16-4E9CB93E2674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTest", "ServiceTest\ServiceTest.csproj", "{51BA66ED-3A5E-4310-A103-4BE74A315B49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{933EC3C2-A763-4592-8B62-DB3678A3CAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{933EC3C2-A763-4592-8B62-DB3678A3CAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{933EC3C2-A763-4592-8B62-DB3678A3CAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BA66ED-3A5E-4310-A103-4BE74A315B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BA66ED-3A5E-4310-A103-4BE74A315B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BA66ED-3A5E-4310-A103-4BE74A315B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BA66ED-3A5E-4310-A103-4BE74A315B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{62E56E22-17D7-4C2C-BA38-F672633D008E} = {0B4FF58E-CAD4-423A-BD07-8E69FA528728}
 		{2B521AFD-D555-4DE5-B40A-A20F94FB5B38} = {0B4FF58E-CAD4-423A-BD07-8E69FA528728}
 		{933EC3C2-A763-4592-8B62-DB3678A3CAED} = {20B341AF-8980-4D5F-B3BE-095679BC3F90}
+		{51BA66ED-3A5E-4310-A103-4BE74A315B49} = {8FEA0026-1F3E-42BE-AD16-4E9CB93E2674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {352FCDA6-E14F-49A4-9403-3E65898C7472}
