@@ -88,6 +88,15 @@ namespace Api.Contracts.Error.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The provided ID does not exist.
+        /// </summary>
+        public static string InvalidID {
+            get {
+                return ResourceManager.GetString("InvalidID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The last name of the contact is invalid.
         /// </summary>
         public static string InvalidLastName {

@@ -88,6 +88,15 @@ namespace Api.Contracts.Error.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 400.
+        /// </summary>
+        public static string InvalidID {
+            get {
+                return ResourceManager.GetString("InvalidID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 300.
         /// </summary>
         public static string InvalidLastName {

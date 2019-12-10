@@ -11,9 +11,11 @@ namespace Api.ContactService
     {
         private readonly IDAL _dataLayer;
 
+
         public ContactService(IDAL dataLayer)
         {
             this._dataLayer = dataLayer;
+
         }
 
         public List<Contact> GetContacts()
@@ -41,7 +43,7 @@ namespace Api.ContactService
         {
             _dataLayer.ReactivateContact(id);
         }
-        
+
         public void DeleteContact(int id)
         {
             _dataLayer.DeleteContact(id);

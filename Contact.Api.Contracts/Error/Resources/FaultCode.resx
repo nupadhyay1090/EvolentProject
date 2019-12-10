@@ -126,6 +126,9 @@
   <data name="InvalidFirstName" xml:space="preserve">
     <value>200</value>
   </data>
+  <data name="InvalidID" xml:space="preserve">
+    <value>400</value>
+  </data>
   <data name="InvalidLastName" xml:space="preserve">
     <value>300</value>
   </data>

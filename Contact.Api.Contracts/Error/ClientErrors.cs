@@ -21,5 +21,10 @@ namespace Api.Contracts.Error
         {
             return new BadRequestException(Convert.ToInt32(FaultCode.InvalidLastName), FaultMessage.InvalidLastName);
         }
+
+        public static BadRequestException InvalidId()
+        {
+            return new BadRequestException(Convert.ToInt32(FaultCode.InvalidID), FaultMessage.InvalidID);
+        }
     }
 }
